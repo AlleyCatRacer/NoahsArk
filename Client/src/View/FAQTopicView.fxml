@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="450.0" prefWidth="650.0" userData="Frequently Asked Questions"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="View.FAQTopicController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="450.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Noah's Ark">
+                                    <font>
+                                        <Font size="24.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="75.0"/>
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" HBox.hgrow="NEVER">
+                            <children>
+                                <Button fx:id="searchButton" maxWidth="-Infinity" minWidth="-Infinity"
+                                        mnemonicParsing="false" onAction="#searchClicked" prefWidth="75.0"
+                                        text="Search"/>
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets right="5.0"/>
+                    </padding>
+                </HBox>
+                <SplitPane dividerPositions="0.700236519724115" prefHeight="400.0" prefWidth="600.0"
+                           VBox.vgrow="ALWAYS">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <VBox prefHeight="398.7692424706457" prefWidth="446.0307823190185"
+                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <padding>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                                    </padding>
+                                    <children>
+                                        <VBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label fx:id="topicLabel" text="Topic">
+                                                    <font>
+                                                        <Font size="18.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Accordion fx:id="topicAccordion" VBox.vgrow="ALWAYS">
+                                                    <panes>
+                                                        <TitledPane fx:id="questionTitle1" animated="false"
+                                                                    text="Question1">
+                                                            <content>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                            prefHeight="217.0" prefWidth="445.0">
+                                                                    <children>
+                                                                        <TextArea fx:id="answer1" editable="false"
+                                                                                  prefHeight="218.5846217987243"
+                                                                                  prefWidth="445.2923207588877"
+                                                                                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non. Donec ultrices tincidunt arcu non. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Amet risus nullam eget felis eget nunc lobortis. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Elementum pulvinar etiam non quam. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Faucibus in ornare quam viverra orci sagittis eu. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Imperdiet massa tincidunt nunc pulvinar sapien et. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Urna neque viverra justo nec ultrices. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Mi bibendum neque egestas congue quisque egestas diam in arcu. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Viverra accumsan in nisl nisi scelerisque eu.&#10;&#10;Vel eros donec ac odio. Aliquet enim tortor at auctor urna nunc id. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Diam vel quam elementum pulvinar etiam non quam lacus. Enim nunc faucibus a pellentesque sit. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Maecenas sed enim ut sem viverra aliquet eget sit amet. Quam elementum pulvinar etiam non quam. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus."
+                                                                                  wrapText="true"
+                                                                                  AnchorPane.bottomAnchor="0.0"
+                                                                                  AnchorPane.leftAnchor="0.0"
+                                                                                  AnchorPane.rightAnchor="0.0"
+                                                                                  AnchorPane.topAnchor="0.0">
+                                                                            <font>
+                                                                                <Font size="13.0"/>
+                                                                            </font>
+                                                                        </TextArea>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </content>
+                                                        </TitledPane>
+                                                        <TitledPane fx:id="questionTitle2" animated="false"
+                                                                    text="Question2">
+                                                            <content>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                            prefHeight="180.0" prefWidth="200.0">
+                                                                    <children>
+                                                                        <TextArea fx:id="answer2" editable="false"
+                                                                                  prefHeight="218.5846217987243"
+                                                                                  prefWidth="445.2923207588877"
+                                                                                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non. Donec ultrices tincidunt arcu non. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Amet risus nullam eget felis eget nunc lobortis. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Elementum pulvinar etiam non quam. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Faucibus in ornare quam viverra orci sagittis eu. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Imperdiet massa tincidunt nunc pulvinar sapien et. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Urna neque viverra justo nec ultrices. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Mi bibendum neque egestas congue quisque egestas diam in arcu. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Viverra accumsan in nisl nisi scelerisque eu.&#10;&#10;Vel eros donec ac odio. Aliquet enim tortor at auctor urna nunc id. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Diam vel quam elementum pulvinar etiam non quam lacus. Enim nunc faucibus a pellentesque sit. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Maecenas sed enim ut sem viverra aliquet eget sit amet. Quam elementum pulvinar etiam non quam. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus."
+                                                                                  wrapText="true"
+                                                                                  AnchorPane.bottomAnchor="0.0"
+                                                                                  AnchorPane.leftAnchor="0.0"
+                                                                                  AnchorPane.rightAnchor="0.0"
+                                                                                  AnchorPane.topAnchor="0.0">
+                                                                            <font>
+                                                                                <Font size="13.0"/>
+                                                                            </font>
+                                                                        </TextArea>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </content>
+                                                        </TitledPane>
+                                                        <TitledPane fx:id="questionTitle3" animated="false"
+                                                                    text="Question3">
+                                                            <content>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0"
+                                                                            prefHeight="180.0" prefWidth="200.0">
+                                                                    <children>
+                                                                        <TextArea fx:id="answer3" editable="false"
+                                                                                  prefHeight="218.5846217987243"
+                                                                                  prefWidth="445.2923207588877"
+                                                                                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non. Donec ultrices tincidunt arcu non. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Amet risus nullam eget felis eget nunc lobortis. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Elementum pulvinar etiam non quam. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Faucibus in ornare quam viverra orci sagittis eu. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. Imperdiet massa tincidunt nunc pulvinar sapien et. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Urna neque viverra justo nec ultrices. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Mi bibendum neque egestas congue quisque egestas diam in arcu. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Viverra accumsan in nisl nisi scelerisque eu.&#10;&#10;Vel eros donec ac odio. Aliquet enim tortor at auctor urna nunc id. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Diam vel quam elementum pulvinar etiam non quam lacus. Enim nunc faucibus a pellentesque sit. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Maecenas sed enim ut sem viverra aliquet eget sit amet. Quam elementum pulvinar etiam non quam. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus."
+                                                                                  wrapText="true"
+                                                                                  AnchorPane.bottomAnchor="0.0"
+                                                                                  AnchorPane.leftAnchor="0.0"
+                                                                                  AnchorPane.rightAnchor="0.0"
+                                                                                  AnchorPane.topAnchor="0.0">
+                                                                            <font>
+                                                                                <Font size="13.0"/>
+                                                                            </font>
+                                                                        </TextArea>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                            </content>
+                                                        </TitledPane>
+                                                    </panes>
+                                                </Accordion>
+                                                <Button fx:id="backToTopicsButton" mnemonicParsing="false"
+                                                        onAction="#backToTopicsClicked" prefWidth="150.0"
+                                                        text="Back To Topics">
+                                                    <VBox.margin>
+                                                        <Insets bottom="2.0" left="2.0" right="2.0" top="5.0"/>
+                                                    </VBox.margin>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0"
+                                    prefWidth="100.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="398.7692424706457" prefWidth="147.69231202616507"
+                                      spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </padding>
+                                    <children>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <HBox alignment="CENTER">
+                                                    <children>
+                                                        <Label text="Welcome ">
+                                                            <font>
+                                                                <Font size="13.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="usernameLabel" text="[username]">
+                                                            <font>
+                                                                <Font size="13.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox>
+                                                    <children>
+                                                        <HBox HBox.hgrow="ALWAYS">
+                                                            <children>
+                                                                <Button mnemonicParsing="false"
+                                                                        onAction="#logoutClicked" prefWidth="60.0"
+                                                                        text="Logout"/>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox HBox.hgrow="NEVER">
+                                                            <children>
+                                                                <Button mnemonicParsing="false"
+                                                                        onAction="#profileClicked" prefWidth="60.0"
+                                                                        text="Profile"/>
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <Separator prefWidth="200.0"/>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label text="The default news section containing articles and advertisements."
+                                                       textAlignment="CENTER" wrapText="true">
+                                                    <font>
+                                                        <Font size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Button fx:id="homeButton" mnemonicParsing="false"
+                                                        onAction="#homeClicked" prefWidth="167.0" text="Back To Home"/>
+                                            </children>
+                                        </VBox>
+                                        <Separator prefWidth="200.0"/>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Forum section with varied topics to discuss all things canine."
+                                                       textAlignment="CENTER" wrapText="true">
+                                                    <font>
+                                                        <Font size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Button fx:id="forumButton" mnemonicParsing="false"
+                                                        onAction="#forumClicked" prefWidth="167.0" text="Forum"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

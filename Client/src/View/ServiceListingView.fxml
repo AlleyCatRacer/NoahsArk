@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="250.0" prefWidth="400.0" userData="Edit service" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ServiceListingController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="350.0" prefWidth="200.0" spacing="2.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox VBox.vgrow="NEVER">
+                    <children>
+                        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                            <children>
+                                <TextField fx:id="titleField" alignment="CENTER" prefWidth="200.0"
+                                           promptText="Enter a title...">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                </TextField>
+                            </children>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                            </padding>
+                        </HBox>
+                    </children>
+                </HBox>
+                <Separator prefWidth="200.0"/>
+                <HBox alignment="CENTER" spacing="30.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Postcode:" HBox.hgrow="NEVER">
+                                    <font>
+                                        <Font size="13.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="postcodeField" prefWidth="75.0"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets/>
+                            </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Price:">
+                                    <font>
+                                        <Font size="13.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="priceField" prefWidth="75.0"/>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="30.0"/>
+                            </HBox.margin>
+                        </HBox>
+                    </children>
+                </HBox>
+                <Label text="Details:">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Label>
+                <TextArea fx:id="detailsTextArea" prefHeight="200.0" prefWidth="200.0"/>
+                <Label fx:id="errorLabel" text="[Error]" textAlignment="CENTER" textFill="RED" wrapText="true"/>
+                <HBox>
+                    <children>
+                        <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button fx:id="deleteButton" minWidth="100.0" mnemonicParsing="false"
+                                        onAction="#deleteClicked" text="Delete"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#submitClicked" prefWidth="100.0"
+                                        text="Save"/>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Button minWidth="100.0" mnemonicParsing="false" onAction="#cancelClicked"
+                                        text="Cancel"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

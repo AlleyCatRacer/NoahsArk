@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="450.0" prefWidth="650.0" userData="Home" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HomeController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="450.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Noah's Ark">
+                                    <font>
+                                        <Font size="24.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="75.0"/>
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" HBox.hgrow="NEVER">
+                            <children>
+                                <Button fx:id="searchButton" maxWidth="-Infinity" minWidth="-Infinity"
+                                        mnemonicParsing="false" onAction="#searchClicked" prefWidth="75.0"
+                                        text="Search"/>
+                            </children>
+                        </VBox>
+                    </children>
+                    <padding>
+                        <Insets right="5.0"/>
+                    </padding>
+                </HBox>
+                <SplitPane dividerPositions="0.700236519724115" prefHeight="400.0" prefWidth="600.0"
+                           VBox.vgrow="ALWAYS">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0">
+                            <children>
+                                <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                            AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <content>
+                                        <VBox>
+                                            <children>
+                                                <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+                                                    <content>
+                                                        <AnchorPane>
+                                                            <children>
+                                                                <VBox prefHeight="420.1846277144396"
+                                                                      prefWidth="423.87693551509375"
+                                                                      AnchorPane.bottomAnchor="0.0"
+                                                                      AnchorPane.leftAnchor="0.0"
+                                                                      AnchorPane.rightAnchor="0.0"
+                                                                      AnchorPane.topAnchor="0.0">
+                                                                    <children>
+                                                                        <VBox alignment="CENTER_LEFT" prefWidth="400.0"
+                                                                              spacing="2.0">
+                                                                            <children>
+                                                                                <Label fx:id="headline1">
+                                                                                    <font>
+                                                                                        <Font size="13.0"/>
+                                                                                    </font>
+                                                                                </Label>
+                                                                                <TextArea fx:id="article1"
+                                                                                          editable="false"
+                                                                                          wrapText="true"
+                                                                                          VBox.vgrow="ALWAYS"/>
+                                                                            </children>
+                                                                        </VBox>
+                                                                        <Separator prefWidth="200.0">
+                                                                            <VBox.margin>
+                                                                                <Insets bottom="2.0" top="5.0"/>
+                                                                            </VBox.margin>
+                                                                        </Separator>
+                                                                        <VBox alignment="CENTER_LEFT" prefHeight="220.0"
+                                                                              prefWidth="400.0" spacing="2.0">
+                                                                            <children>
+                                                                                <Label fx:id="headline2">
+                                                                                    <font>
+                                                                                        <Font size="13.0"/>
+                                                                                    </font>
+                                                                                </Label>
+                                                                                <TextArea fx:id="article2"
+                                                                                          editable="false"
+                                                                                          wrapText="true"
+                                                                                          VBox.vgrow="ALWAYS"/>
+                                                                            </children>
+                                                                        </VBox>
+                                                                    </children>
+                                                                </VBox>
+                                                            </children>
+                                                            <padding>
+                                                                <Insets right="20.0"/>
+                                                            </padding>
+                                                        </AnchorPane>
+                                                    </content>
+                                                    <VBox.margin>
+                                                        <Insets/>
+                                                    </VBox.margin>
+                                                    <padding>
+                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                                    </padding>
+                                                </ScrollPane>
+                                            </children>
+                                        </VBox>
+                                    </content>
+                                    <padding>
+                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                                    </padding>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0"
+                                    prefWidth="100.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="398.7692424706457" prefWidth="147.69231202616507"
+                                      spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </padding>
+                                    <children>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <HBox alignment="CENTER">
+                                                    <children>
+                                                        <Label text="Welcome ">
+                                                            <font>
+                                                                <Font size="13.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="usernameLabel" text="[username]">
+                                                            <font>
+                                                                <Font size="13.0"/>
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox>
+                                                    <children>
+                                                        <HBox HBox.hgrow="ALWAYS">
+                                                            <children>
+                                                                <Button mnemonicParsing="false"
+                                                                        onAction="#logoutClicked" prefWidth="60.0"
+                                                                        text="Logout"/>
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox HBox.hgrow="NEVER">
+                                                            <children>
+                                                                <Button mnemonicParsing="false"
+                                                                        onAction="#profileClicked" prefWidth="60.0"
+                                                                        text="Profile"/>
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </VBox>
+                                        <Separator prefWidth="200.0"/>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Frequently asked questions section to help humans help themselves and their dogs."
+                                                       textAlignment="CENTER" wrapText="true">
+                                                    <font>
+                                                        <Font size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Button fx:id="FAQButton" mnemonicParsing="false" onAction="#FAQClicked"
+                                                        prefWidth="167.0" text="Frequently Asked Questions"/>
+                                            </children>
+                                        </VBox>
+                                        <Separator prefWidth="200.0"/>
+                                        <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Forum section with varied topics to discuss all things canine."
+                                                       textAlignment="CENTER" wrapText="true">
+                                                    <font>
+                                                        <Font size="13.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Button fx:id="forumButton" mnemonicParsing="false"
+                                                        onAction="#forumClicked" prefWidth="167.0" text="Forum"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
