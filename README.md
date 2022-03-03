@@ -1,6 +1,7 @@
 # SEP_S21
-Written as a 2nd semester project for software engineering at VIA university college, campus Horsens, DK.
-Spring semester 2021.
+Written as a 2nd semester project in spring 2021 for software engineering at VIA university college, campus Horsens, DK.
+
+The project requirements was to write a multi-user relational database management system in Java and the database with PostrgreSQL. The development must be Agile and the system tested with JUnit.
 
 The idea was to create a public platform where canine enthusiast could post and answer questions in forums as well as advertise their services and search through services provided by other users.
 
