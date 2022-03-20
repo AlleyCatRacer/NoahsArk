@@ -5,7 +5,7 @@ The idea was to create a public platform where canine enthusiast could post and 
 
 ## Development
 The project requirements were to create a multi-user relational database management system in Java and the database in PostrgreSQL. The development must be Agile, the methodology must be Scrum and the system must be tested with JUnit.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The GUI was created with FXML files generated from SceneBuilder, the Java code was written in IntelliJ IDEA and the postgreSQL code was written in DataGrip.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The GUI was created with FXML files generated from SceneBuilder, the Java code was written in IntelliJ IDEA and the postgreSQL code was written in DataGrip. Detailed documentation can be found in the [Project Report](https://docs.google.com/document/d/1g-mTou33_LCxmoied5a9nbxREq1z27sJziQvJsAy05w/edit?usp=sharing).
 
 The semester project group consisted of 4 people:
 
