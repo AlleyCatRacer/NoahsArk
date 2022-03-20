@@ -1,4 +1,4 @@
-# SEP_S21
+# Noah's Ark
 Written as a 2<sup>nd</sup> semester project in spring 2021 for software engineering at [VIA university college](https://via.dk), campus Horsens, DK.  
 The idea was to create a public platform where canine enthusiast could post and answer questions in forums as well as advertise their services and search through services provided by other users.
 
