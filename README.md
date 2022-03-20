@@ -9,10 +9,10 @@ The project requirements were to create a multi-user relational database managem
 
 The semester project group consisted of 4 people:
 
-- [Aldís Eir Hansen](https://github.com/AlleyCatRacer)[^0]
+- [Aldís Eir Hansen](https://github.com/AlleyCatRacer) [^0]
 - [Lili Zsuzsanna Tóth](https://github.com/tothlilizs) [^1]
-- [Lukas Reimantas Tiuninas](https://github.com/SkyKalazar)[^2]
-- [Joseph Carroll](https://github.com/carrolljody)[^3]
+- [Lukas Reimantas Tiuninas](https://github.com/SkyKalazar) [^2]
+- [Joseph Carroll](https://github.com/carrolljody) [^3]
 
 
 [^0]: AKA Allie, AlleyCatRacer
